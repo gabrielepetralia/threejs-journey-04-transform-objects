@@ -29,6 +29,10 @@ console.log(mesh.position.length())
 
 scene.add(mesh)
 
+// Axes helper
+const axesHelper = new THREE.AxesHelper(2) // 2 is the length of the axes
+scene.add(axesHelper)
+
 /**
  * Sizes
  */
@@ -42,6 +46,8 @@ const sizes = {
  */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
 camera.position.z = 3
+camera.position.x = 1
+camera.position.y = 1
 scene.add(camera)
 
 // get the distance between the mesh and another object (camera)
