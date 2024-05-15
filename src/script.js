@@ -13,19 +13,24 @@ const geometry = new THREE.BoxGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
 const mesh = new THREE.Mesh(geometry, material)
 
-// position
+// Position
 // mesh.position.x = 0.8
 // mesh.position.y = - 0.5
-// mesh.position.z = 1
-
-mesh.position.set(0.8, - 0.5, 1)
+// mesh.position.z = 0.2
+mesh.position.set(0.8, - 0.5, 0.2)
 
 // get the distance between the mesh and the center of the scene
-console.log(mesh.position.length())
+// console.log(mesh.position.length())
 
 // reduce the length of the vector to 1
 // mesh.position.normalize()
-// console.log(mesh.position.length())
+
+// Scale
+// mesh.scale.x = 1.5
+// mesh.scale.y = 0.5
+// mesh.scale.z = 0.3
+mesh.scale.set(1.5, 0.5, 0.3)
+
 
 scene.add(mesh)
 
@@ -51,7 +56,7 @@ camera.position.y = 1
 scene.add(camera)
 
 // get the distance between the mesh and another object (camera)
-console.log(mesh.position.distanceTo(camera.position))
+// console.log(mesh.position.distanceTo(camera.position))
 
 /**
  * Renderer
