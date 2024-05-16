@@ -31,6 +31,10 @@ mesh.position.set(0.8, - 0.5, 0.2)
 // mesh.scale.z = 0.3
 mesh.scale.set(1.5, 0.5, 0.3)
 
+// Rotation
+mesh.rotation.reorder('YXZ') // reorder before changing the rotation
+mesh.rotation.x = Math.PI * 0.25
+mesh.rotation.y = Math.PI * 0.25
 
 scene.add(mesh)
 
@@ -53,6 +57,9 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
 camera.position.z = 3
 camera.position.x = 1
 camera.position.y = 1
+
+camera.lookAt(mesh.position)
+
 scene.add(camera)
 
 // get the distance between the mesh and another object (camera)
