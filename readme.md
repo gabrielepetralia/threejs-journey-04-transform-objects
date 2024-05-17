@@ -2,7 +2,7 @@
 
 This project demonstrates the application of various transformations to 3D objects using Three.js. 
 
-The transformations include changing the position, scale, and rotation of objects. Additionally, the project showcases the use of object groups to manage and transform multiple objects simultaneously.
+The transformations include changing the **position**, **scale**, and **rotation** of objects. Additionally, the project showcases the use of **object groups** to manage and transform multiple objects simultaneously.
 
 ## Prerequisites
 
